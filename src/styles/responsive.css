@@ -1,0 +1,252 @@
+/* ============================================================
+   RESPONSIVE.CSS — AUREN
+============================================================ */
+
+/* ============================================================
+   <= 1024px
+============================================================ */
+
+@media (max-width: 1024px) {
+    /* ---------- NAVBAR ---------- */
+
+    .navbar__nav,
+    .navbar__actions {
+        display: none;
+    }
+
+    .navbar__hamburger {
+        display: flex;
+    }
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: auto;
+        padding-block: var(--space-16);
+    }
+
+    .hero__content {
+        max-width: 100%;
+    }
+
+    .hero__meta {
+        flex-wrap: wrap;
+        gap: var(--space-4);
+    }
+
+    /* ---------- PRODUCTS ---------- */
+
+    .products__page {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---------- CATEGORY ---------- */
+
+    .categories__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---------- COLLECTION ---------- */
+
+    .collection {
+        min-height: 60vh;
+    }
+
+    /* ---------- MODAL ---------- */
+
+    .product-modal__content {
+        grid-template-columns: 1fr;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    .footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================================
+   <= 768px
+============================================================ */
+
+@media (max-width: 768px) {
+    /* ---------- GLOBAL ---------- */
+
+    .container {
+        padding-inline: var(--space-6);
+    }
+
+    section {
+        padding-block: var(--space-12);
+    }
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero__content {
+        align-items: center;
+    }
+
+    .hero__title {
+        max-width: 100%;
+    }
+
+    .hero__description {
+        max-width: 100%;
+    }
+
+    .hero__actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero__meta {
+        justify-content: center;
+    }
+
+    .hero__scroll {
+        display: none;
+    }
+
+    /* ---------- PRODUCTS ---------- */
+
+    .products__wrapper {
+        gap: var(--space-3);
+    }
+
+    .products__page {
+        grid-template-columns: 1fr;
+    }
+
+    .products__arrow {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /* ---------- COLLECTION ---------- */
+
+    .collection {
+        text-align: center;
+    }
+
+    .collection__content {
+        align-items: center;
+        margin-inline: auto;
+    }
+
+    .collection__description {
+        max-width: 100%;
+    }
+
+    /* ---------- CATEGORIES ---------- */
+
+    .categories__search {
+        margin-bottom: var(--space-8);
+    }
+
+    .categories__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ---------- NEWSLETTER ---------- */
+
+    .newsletter__form {
+        flex-direction: column;
+    }
+
+    .newsletter__button {
+        width: 100%;
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer__brand {
+        align-items: center;
+    }
+
+    .footer__links {
+        align-items: center;
+    }
+}
+
+/* ============================================================
+   <= 576px
+============================================================ */
+
+@media (max-width: 576px) {
+    /* ---------- NAVBAR ---------- */
+
+    .navbar__inner {
+        padding-inline: var(--space-4);
+    }
+
+    /* ---------- HERO ---------- */
+
+    .hero__actions {
+        flex-direction: column;
+    }
+
+    .hero__actions .btn {
+        width: 100%;
+    }
+
+    .hero__meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* ---------- COLLECTION ---------- */
+
+    .collection__actions {
+        width: 100%;
+    }
+
+    .collection__actions .btn {
+        width: 100%;
+    }
+
+    /* ---------- PRODUCT MODAL ---------- */
+
+    .product-modal {
+        padding: var(--space-4);
+    }
+
+    .product-modal__details {
+        padding: var(--space-6);
+    }
+
+    .product-modal__actions {
+        flex-direction: column;
+    }
+
+    .product-modal__actions .btn {
+        width: 100%;
+    }
+
+    /* ---------- NEWSLETTER ---------- */
+
+    .newsletter__input,
+    .newsletter__button {
+        width: 100%;
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        padding-top: var(--space-12);
+    }
+
+    .footer__bottom {
+        text-align: center;
+    }
+}
